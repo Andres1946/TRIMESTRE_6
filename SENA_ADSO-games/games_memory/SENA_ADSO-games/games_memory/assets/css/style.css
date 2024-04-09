@@ -1,0 +1,55 @@
+@font-face {
+  font-family: honk;
+  src: url('../fonts/Honk/Honk-Regular-VariableFont_MORF\,SHLN.ttf');
+}
+
+body {
+  background: black;
+  font-family: honk;
+  font-size: large;
+  text-transform: uppercase !important;
+
+}
+.titleGames{
+  font-size: 5em;
+}
+
+input {
+  text-transform: uppercase !important;
+  background:#000 !important;
+}
+select {
+  text-transform: uppercase !important;
+  background:#000 !important;
+  cursor: pointer;
+}
+
+#btn_start {
+  background: #000;
+  border: solid 2px green;
+  font-size: 2em;
+}
+
+#btn_start:hover {
+  background: rgb(0, 96, 0);
+  background: linear-gradient(0deg, rgba(0, 96, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  border-radius:10px;
+  font-size: 1.9em;
+}
+.container-actions{
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+  background: rgba(43, 41, 41, 0.34);
+  bottom: 0;
+  top:0;
+  display: none;
+}
+.container-actions div{
+  text-align: center;
+  width: 200px;
+  top: 25%;
+  position: absolute;
+  left: 42%;
+  cursor: pointer;
+}
