@@ -63,4 +63,13 @@ class Chronometer {
   getHourd() {
     return this.hourd;
   }
+
+  stopChoronometer() {
+
+    clearInterval(this.intervalID);
+    this.getElementsLabel[0].innerHTML = this.hourd;
+    this.getElementsLabel[1].innerHTML = this.minutes;
+    this.getElementsLabel[2].innerHTML = this.seconds ;
+
+  }
 }

@@ -5,7 +5,7 @@ const contId = "containerGame";
 const progress = "progressbarId";
 const chronometer = "chronometerId";
 const containerActions="container-actions";
-const speed = 100;
+const speed = 1000;
 const maxMilliseconds = 2000;
 
 /**

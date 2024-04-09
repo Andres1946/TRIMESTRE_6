@@ -3,140 +3,140 @@
     "id": 1,
     "nickname": "user123",
     "nombre": "Juan Pérez",
-    "img": "imagen1.jpg",
+    "img": "imagen1.png",
     "valor": 1500
   },
   {
     "id": 2,
     "nickname": "cool_guy",
     "nombre": "María García",
-    "img": "imagen2.jpg",
+    "img": "imagen2.png",
     "valor": 2200
   },
   {
     "id": 3,
     "nickname": "awesome_dude",
     "nombre": "Carlos Rodríguez",
-    "img": "imagen3.jpg",
+    "img": "imagen3.png",
     "valor": 1800
   },
   {
     "id": 4,
     "nickname": "sunny_girl",
     "nombre": "Laura Martínez",
-    "img": "imagen4.jpg",
+    "img": "imagen4.png",
     "valor": 2100
   },
   {
     "id": 5,
     "nickname": "smiley_face",
     "nombre": "Andrés López",
-    "img": "imagen5.jpg",
+    "img": "imagen5.png",
     "valor": 1900
   },
   {
     "id": 6,
     "nickname": "tech_wizard",
     "nombre": "Sofía Ruiz",
-    "img": "imagen6.jpg",
+    "img": "imagen6.png",
     "valor": 2300
   },
   {
     "id": 7,
     "nickname": "mastermind",
     "nombre": "Diego Hernández",
-    "img": "imagen7.jpg",
+    "img": "imagen7.png",
     "valor": 2500
   },
   {
     "id": 8,
     "nickname": "happy_camper",
     "nombre": "Ana Sánchez",
-    "img": "imagen8.jpg",
+    "img": "imagen8.png",
     "valor": 1700
   },
   {
     "id": 9,
     "nickname": "gaming_guru",
     "nombre": "Javier Fernández",
-    "img": "imagen9.jpg",
+    "img": "imagen9.png",
     "valor": 2000
   },
   {
     "id": 10,
     "nickname": "code_ninja",
     "nombre": "Elena Gómez",
-    "img": "imagen10.jpg",
+    "img": "imagen10.png",
     "valor": 2400
   },
   {
     "id": 11,
     "nickname": "design_maven",
     "nombre": "Miguel González",
-    "img": "imagen11.jpg",
+    "img": "imagen11.png",
     "valor": 2100
   },
   {
     "id": 12,
     "nickname": "music_lover",
     "nombre": "Luisa Jiménez",
-    "img": "imagen12.jpg",
+    "img": "imagen12.png",
     "valor": 1800
   },
   {
     "id": 13,
     "nickname": "coffee_addict",
     "nombre": "Pedro Pérez",
-    "img": "imagen13.jpg",
+    "img": "imagen13.png",
     "valor": 2200
   },
   {
     "id": 14,
     "nickname": "bookworm",
     "nombre": "Carmen Rodríguez",
-    "img": "imagen14.jpg",
+    "img": "imagen14.png",
     "valor": 1900
   },
   {
     "id": 15,
     "nickname": "fitness_freak",
     "nombre": "Roberto Martínez",
-    "img": "imagen15.jpg",
+    "img": "imagen15.png",
     "valor": 2300
   },
   {
     "id": 16,
     "nickname": "adventure_seeker",
     "nombre": "Isabel López",
-    "img": "imagen16.jpg",
+    "img": "imagen16.png",
     "valor": 2000
   },
   {
     "id": 17,
     "nickname": "art_enthusiast",
     "nombre": "Antonio Ruiz",
-    "img": "imagen17.jpg",
+    "img": "imagen17.png",
     "valor": 2500
   },
   {
     "id": 18,
     "nickname": "traveler",
     "nombre": "María Hernández",
-    "img": "imagen18.jpg",
+    "img": "imagen18.png",
     "valor": 1700
   },
   {
     "id": 19,
     "nickname": "nature_lover",
     "nombre": "Jorge Sánchez",
-    "img": "imagen19.jpg",
+    "img": "imagen19.png",
     "valor": 2100
   },
   {
     "id": 20,
     "nickname": "foodie",
     "nombre": "Lucía Fernández",
-    "img": "imagen20.jpg",
+    "img": "imagen20.png",
     "valor": 2400
   }
 ]

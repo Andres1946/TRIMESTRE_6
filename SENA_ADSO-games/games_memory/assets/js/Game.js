@@ -14,9 +14,9 @@ class Game {
     this.getServer = window.location.origin; //server path name
     this.folderPath = "/games_memory"; //name folder 
     this.serverPath = this.getServer + this.folderPath; //server path name
-    this.uriJson = "/assets/doc/User.json"; // path data JSON
-    this.pathImg = "/assets/img/memory/"; // path data imgs 
-    this.pathImgDafault = "/assets/img/memory/img_default.jpg"; // path data img default 
+    this.uriJson = "https://api-rest1-d4f5f-default-rtdb.firebaseio.com/api/users.json"; // path data JSON
+    this.pathImg = "assets/img/memory/"; // path data imgs 
+    this.pathImgDefault = "assets/img/memory/img_default.jpg"; // path data img default 
     this.longBootstrap = 12 / level; // Changes Grid bootstrap - The level value is divided by 12 spaces on the grid
     this.newArrayGames = []; // New data matrix 
     this.arrayGamesCard = []; // New data matrix to create the cards
@@ -83,7 +83,7 @@ class Game {
 
     for (let i = 0; i < getNewArray.length; i++) {
       this.totalPointGame += getNewArray[i].valor; ///Accumulating Value Points
-      cardsAux += '<div class="col-' + this.longBootstrap + ' pt-2 mx-auto ' + this.contCardClass + '"><div class="card" ><img data-value="' + getNewArray[i].valor + '" data-src="' + this.pathImg + getNewArray[i].img + '" src="' + this.pathImgDafault + '" class="card-img-top" alt="..."> <div class="card-body"><h5 class="card-title">' + getNewArray[i].nombre + '</h5><p class="card-text">' + getNewArray[i].valor + '</p></div></div></div>';
+      cardsAux += '<div class="col-' + this.longBootstrap + ' pt-2 mx-auto ' + this.contCardClass + '"><div class="card" ><img data-value="' + getNewArray[i].valor + '" data-src="' + this.pathImg + getNewArray[i].img + '" src="' + this.pathImgDefault + '" class="card-img-top" alt="..."> <div class="card-body"><h5 class="card-title">' + getNewArray[i].nombre + '</h5><p class="card-text">' + getNewArray[i].valor + '</p></div></div></div>';
       cont++;
       if (row == cont - 1) {
         cards += '<div class="row">' + cardsAux + '</div>';
@@ -99,10 +99,14 @@ class Game {
   changeElementImg() {
 
     this.contCardGame = document.querySelectorAll('.' + this.contCardClass);//Content card
-    var pathDefault = this.getServer + this.pathImgDafault;
+    var pathDefault = this.getServer+  this.folderPath +'/'+ this.pathImgDefault;
+    
     for (let i = 0; i < this.contCardGame.length; i++) {
       const objImg = this.contCardGame[i].querySelector('img');
       this.contCardGame[i].addEventListener('click', () => {
+
+        console.log(objImg.src)
+        console.log(pathDefault)
         if (objImg.src == pathDefault) {
 
           this.setSelectCard(objImg);
@@ -160,7 +164,13 @@ class Game {
   setProgressData(dataProgress) {
     this.progCont.innerText = parseInt(dataProgress) + "%";
     this.progCont.style.width = dataProgress + "%";
-    this.getProgressvalue(dataProgress);
+
+    if (dataProgress == 100) {
+      alert("Ganaste");
+      this.objChoronometer.stopChoronometer();
+    }
+
+
   }
 
   showContainerActions() {
@@ -174,11 +184,12 @@ class Game {
     if(value==100){
       alert("OK");
       let elementImg=this.objContainerActions.childNodes[1].childNodes[0];
-      elementImg.src="https://media.tenor.com/PDxkcE116H8AAAAi/mystic-messenger-video-game.gif";
+      elementImg.src="https://media.tenor.com/FaxA2s_yG7AAAAAi/mystic-messenger-video-game.gif";
       elementImg.classList.add("animate__animated", "animate__heartBeat", "animate__delay-2s");
       this.setTimeOut();
     }
   }
+  
 
 }
 
