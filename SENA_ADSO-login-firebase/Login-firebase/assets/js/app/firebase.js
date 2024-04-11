@@ -7,12 +7,13 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDceiKbOhgcjndd_VqsqDDJ7GFTET2TrQQ",
-  authDomain: "login-firebase-4499b.firebaseapp.com",
-  projectId: "login-firebase-4499b",
-  storageBucket: "login-firebase-4499b.appspot.com",
-  messagingSenderId: "353165650009",
-  appId: "1:353165650009:web:d9ea274bca8b768d65a948"
+  apiKey: "AIzaSyADZl5GRJloX_2H4u0DSfpBqWyF5CkB57w",
+  authDomain: "login-firebase-c975e.firebaseapp.com",
+  projectId: "login-firebase-c975e",
+  storageBucket: "login-firebase-c975e.appspot.com",
+  messagingSenderId: "937466134641",
+  appId: "1:937466134641:web:a24dd358f8b07a739b1bd0",
+  measurementId: "G-1RER5PYY8W"
 };
 
 // Initialize Firebase
