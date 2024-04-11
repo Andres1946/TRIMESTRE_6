@@ -11,7 +11,7 @@
         google.charts.setOnLoadCallback(drawChart);
 
         function drawChart() {
-            fetch('electronics.json')
+            fetch('https://api-charts-7d327-default-rtdb.firebaseio.com/API/electronics.json')
             .then(response => response.json())
             .then(data => {
                 var dataTable = new google.visualization.DataTable();
