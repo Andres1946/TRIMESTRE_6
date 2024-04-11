@@ -2,7 +2,7 @@ class Calculadora {
     constructor(operator1Element, operator2Element) {
         this.operator1Element = operator1Element;  //variable elemento html donde vamos a pintar
         this.operator2Element = operator2Element;
-        this.clear();
+        this.clear(); //resetear los valolres
     }
 
     clear() {                        //estamos limpiando los operadores en la pantalla
