@@ -1,0 +1,47 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Torta con Google Chart</title>
+    <!-- Load the AJAX API -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            fetch('electronics.json')
+            .then(response => response.json())
+            .then(data => {
+                var dataTable = new google.visualization.DataTable();
+                dataTable.addColumn('string', 'Nombre');
+                dataTable.addColumn('number', 'Valor');
+
+
+                data.forEach(item => {
+                    dataTable.addRow([item.name, item.value]);
+                });
+
+
+                var options = {
+                    title: 'Productos por valor',
+                    is3D: true,
+                };
+
+                // Crear instancia de gráfico de torta y dibujarlo en el elemento con id 'chart_div'
+                var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+                chart.draw(dataTable, options);
+
+                var chart = new google.visualization.BarChart(document.getElementById('chart2_div'));
+                chart.draw(dataTable, options);
+            });
+        }
+    </script>
+</head>
+<body>
+    <!-- Div que contendrá el gráfico de torta -->
+    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+    <div id="chart2_div" style="width: 100%; height: 500px;"></div>
+</body>
+</html>
